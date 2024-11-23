@@ -37,12 +37,12 @@ from simpleLogs import infoL, warningL, errorL, traceL
 infoL("Información con línea de código")
 ```
 
-
 ## Características
 - Colores personalizables: Cada nivel de log tiene un color único para facilitar la identificación visual.
 - Formato enriquecido: Muestra la fecha, hora y línea de origen opcionalmente.
 - Ligero y fácil de integrar: Ideal para proyectos grandes o pequeños.
 - Soporte para niveles avanzados: Incluye trazabilidad (trace) para depuración detallada.
+- Fácil integración: Diseñado para usarse como un reemplazo rápido y sencillo de `print()`.
 
 
 ## Niveles de Log Soportados
@@ -55,17 +55,12 @@ SimpleLogs soporta los siguientes niveles de log, cada uno con colores personali
 | **ERROR**  | Mensajes de error críticos.             | `error`, `errorL`       |
 | **TRACE**  | Mensajes para depuración detallada.      | `trace`, `traceL`       |
 
-
-
-## Imágenes
+### Imágenes
 ![alt text](/examples/example_terminal.png)
 
 ### Real Examples
 ![alt text](/examples/real_ex.png)
 
-## Características
-- Múltiples niveles: Incluye INFO, WARNING, ERROR, y un nivel personalizado TRACE.
-- Fácil integración: Diseñado para usarse como un reemplazo rápido y sencillo de print().
 ## Requisitos
 - Python 3.7 o superior
 - colorama

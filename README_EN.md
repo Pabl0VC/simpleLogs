@@ -6,23 +6,21 @@ SimpleLogs is a lightweight and easy-to-use open-source library for creating log
 - Optional: Display the line of code where the message was generated.
 
 ## Installation
-First, clone this repository and add SimpleLogs to your project:
+To install SimplePyLogsColor, simply run the following command:
 
 ```bash
-git clone https://github.com/Pabl0VC/simpleLogs.git
-# /simpleLogs/ Add this folder to your project. Ideally in /modules/
+pip install simplePyLogsColor
 ```
-If you are using a virtual environment, make sure to activate it and install the requirements:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+Then, in your project, import the logging functions:
+```python
+from simplePyLogsColor.simplelogs import info, warning, error, trace, infoL, warningL, errorL, traceL
 ```
+With this, you'll be able to use the different logging levels in your code.
 
 ## Basic Usage
 Import SimpleLogs into your project:
 ```python
-from simpleLogs import info, warning, error, trace
+from simplePyLogsColor.simplelogs import info, warning, error, trace
 
 info("Information message")
 warning("Warning message")

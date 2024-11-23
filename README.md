@@ -6,23 +6,21 @@
 - Opcional: Mostrar la línea del código donde se generó el mensaje.
 
 ## Instalación
-Primero, clona este repositorio y añade SimpleLogs a tu proyecto:
+Para instalar `SimplePyLogsColor`, solo ejecuta el siguiente comando:
 
 ```bash
-git clone https://github.com/Pabl0VC/simpleLogs.git
-# /simpleLogs/ Agrega esta carpeta a tu proyecto. Idealmente en /modules/
+pip install simplePyLogsColor
 ```
-Si usas un entorno virtual, asegúrate de activarlo e instala los requerimientos:
-```bash
-python -m venv venv
-source venv/bin/activate  # En Windows: venv\Scripts\activate
-pip install -r requirements.txt
+Luego, en tu proyecto, importa las funciones de logging:
+```python
+from simplePyLogsColor.simplelogs import info, warning, error, trace, infoL, warningL, errorL, traceL
 ```
+Con esto, podrás utilizar los diferentes niveles de logging en tu código.
 
 ## Uso Básico
 Importa SimpleLogs en tu proyecto:
 ```python
-from simpleLogs import info, warning, error, trace
+from simplePyLogsColor.simplelogs import info, warning, error, trace
 
 info("Mensaje de información")
 warning("Mensaje de advertencia")
@@ -32,7 +30,7 @@ trace("Mensaje de depuración")
 
 Si deseas incluir información sobre la línea donde se genera el mensaje, utiliza las funciones con sufijo **L**:
 ```python
-from simpleLogs import infoL, warningL, errorL, traceL
+from simplePyLogsColor.simplelogs import infoL
 
 infoL("Información con línea de código")
 ```

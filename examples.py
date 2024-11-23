@@ -1,4 +1,4 @@
-from simpleLogs import info, error, trace, warning, infoL, errorL, traceL, warningL
+from simplePyLogsColor.simpleLogs import info, error, trace, warning, infoL, errorL, traceL, warningL
 
 # Usar las funciones sin la línea de código
 info("1. Mensaje informativo sin línea")
